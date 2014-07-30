@@ -1,0 +1,90 @@
+// Microsoft Visual C++ 生成的资源脚本。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// 从 TEXTINCLUDE 2 资源生成。
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国)资源
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 4, 2
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国)资源
+/////////////////////////////////////////////////////////////////////////////
+// Dialog
+        
+ABOUTBOX DIALOG DISCARDABLE  32, 32, 180, 100
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+
+BEGIN
+   DEFPUSHBUTTON    "OK",IDOK,66,80,50,14
+   ICON             "ABOUT1",IDC_STATIC,7,7,21,20
+   CTEXT            "About1",IDC_STATIC,40,12,100,8
+   CTEXT            "About Box Demo Program",IDC_STATIC,7,40,166,8
+   CTEXT            "(c) Charles Petzold, 1998",IDC_STATIC,7,52,166,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+        
+// Menu
+
+ABOUT1 MENU DISCARDABLE
+
+BEGIN
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About About1...",    IDM_APP_ABOUT
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+        
+// Icon
+ABOUT1             ICON    DISCARDABLE     "About1.ico"
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// 从 TEXTINCLUDE 3 资源生成。
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // 不是 APSTUDIO_INVOKED
+

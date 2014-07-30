@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IconDemo", "IconDemo\IconDemo.vcproj", "{979296D1-BADE-4A4E-AD2B-E5A04A1DAED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{979296D1-BADE-4A4E-AD2B-E5A04A1DAED3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{979296D1-BADE-4A4E-AD2B-E5A04A1DAED3}.Debug|Win32.Build.0 = Debug|Win32
+		{979296D1-BADE-4A4E-AD2B-E5A04A1DAED3}.Release|Win32.ActiveCfg = Release|Win32
+		{979296D1-BADE-4A4E-AD2B-E5A04A1DAED3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
