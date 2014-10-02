@@ -1,0 +1,58 @@
+// Lesson18.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(Lesson18.tlb)，该类型库将成为
+// Lesson18.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(1CC68C59-1060-4B00-82CC-B4C87E07AE9B), version(1.0),
+  helpfile("Lesson18.hlp"),
+  helpstring("Lesson18 ActiveX 控件模块"),
+  control ]
+library Lesson18Lib
+{
+	importlib(STDOLE_TLB);
+
+	//  CLesson18Ctrl 的主调度接口
+
+	[ uuid(98E6F88F-0523-4203-8423-E23733F755A7),
+	  helpstring("Lesson18 Control 的调度接口")]
+	dispinterface _DLesson18
+	{
+		properties:
+            [id(DISPID_BACKCOLOR), helpstring("属性 BackColor")] OLE_COLOR BackColor;
+            [id(DISPID_FORECOLOR), helpstring("属性 ForeColor")] OLE_COLOR ForeColor;
+            [id(1) , helpstring("属性 Interval")] SHORT Interval;
+    methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+            [id(2), helpstring("方法Hello")] void Hello(void);
+    };
+
+	//  CLesson18Ctrl 的事件调度接口
+
+	[ uuid(2DD40FD4-7D52-4DD6-B268-B90C42998EF9),
+	  helpstring("Lesson18 Control 的事件接口") ]
+	dispinterface _DLesson18Events
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+            [id(DISPID_CLICK)] void Click(void);
+            [id(1)] void NewMinute(void);
+    };
+
+	//  CLesson18Ctrl 的类信息
+
+	[ uuid(576751F5-7D86-40BD-9872-EA1463ED0E59),
+	  helpstring("Lesson18 Control"), control ]
+	coclass Lesson18
+	{
+		[default] dispinterface _DLesson18;
+		[default, source] dispinterface _DLesson18Events;
+	};
+
+};

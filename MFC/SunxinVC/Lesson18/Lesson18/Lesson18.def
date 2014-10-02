@@ -1,0 +1,9 @@
+; Lesson18.def : 定义模块参数。
+
+LIBRARY      "Lesson18.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE
